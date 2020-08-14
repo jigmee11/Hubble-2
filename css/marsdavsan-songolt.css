@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../zurag/mars.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  width: 50vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #da5a5a;
+}
+#asuult {
+  width: 100%;
+  height: 10%;
+  margin: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 100%;
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+}
+#songolt {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#butsah {
+  position: absolute;
+  z-index: 999;
+  width: 5vw;
+  height: 10vh;
+
+  top: 1vw;
+  left: 1vw;
+  font-size: large;
+  background-image: url("../zurag/Group\ 89.png");
+  background-size: cover;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/mars-shooter.css" />
+</head>
+
+<body onload style="width: 100vw;">
+  <div id="hehe">
+    <div id="game-over">Тоглоом дууслаа</div>
+    <div id="tovch">
+      <div id="butsah" onclick="butsah()"></div>
+      <div id="restart" onclick="res()"></div>
+    </div>
+  </div>
+</body>
+<script>
+
+  const butsah = () => {
+    if (localStorage.davsan === "davsaan") {
+      window.location.href = "../html/golmarsdavsan.html"
+    } else {
+      window.location.href = "../html/gol.html"
+    }
+  }
+  const res = () => {
+    window.location.href = "../html/space-shooter.html";
+  };
+</script>
+
+</html>

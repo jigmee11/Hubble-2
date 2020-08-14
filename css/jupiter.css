@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("../zurag/jup.png");
+  background-size: cover;
+}

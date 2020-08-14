@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="manifest" href="manifest.manifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <title>Start</title>
+  <link rel="stylesheet" href="css/start.css" />
+</head>
+
+<body>
+  <img src="zurag/start.png" alt="" id="start" />
+  <button id="button" onclick="mover()">Эхлэх</button>
+  <!-- <button id="start">start</button> -->
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+<script src="../js/firebase.js"></script>
+<script>
+  localStorage.removeItem('garag');
+  console.log(localStorage)
+  const mover = () => {
+    window.location.href = "html/gol.html";
+
+  };
+</script>
+
+</html>

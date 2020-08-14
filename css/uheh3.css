@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../zurag/nepture.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#hehe {
+  width: 50vw;
+  height: 30vw;
+  border: 2px inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b9fcf5;
+}
+#game-over {
+  margin: 3vw;
+  font-size: 4vw;
+  color: #85c1e9;
+  font-family: fantasy;
+}
+#tovch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+#butsah {
+  margin-right: 8vw;
+  width: 10vw;
+  height: 18vh;
+  background-image: url("../zurag/Group 89.png");
+  background-size: cover;
+}
+#restart {
+  margin-right: 2vw;
+  width: 10vw;
+  height: 18vh;
+  background-image: url("../zurag/restart.png");
+  background-size: cover;
+}

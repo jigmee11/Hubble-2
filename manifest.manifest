@@ -1,0 +1,10 @@
+{
+  "name": "Hubble",
+  "short_name": "Hubble",
+  "icons": [{
+    "src": "zurag/jupiterdav.png",
+    "sizes": "72x72"
+  }],
+  "display": "fullscreen",
+  "orientation": "landscape"
+}

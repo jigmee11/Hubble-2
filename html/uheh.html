@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/uheh.css" />
+
+</head>
+
+<body onload style="width: 100vw;">
+    <div id="hehe">
+        <div id="game-over">Тоглоом дууслаа</div>
+        <div id="tovch">
+            <div id="butsah" onclick="butsah()"></div>
+            <div id="restart" onclick="res()"></div>
+        </div>
+    </div>
+</body>
+<script>
+    const butsah = () => {
+        if (localStorage.garag === "1") {
+            window.location.href = "../html/golmarsdavsan.html"
+        } else if (localStorage.garag === "2") {
+            window.location.href = "../html/goldmars-jup-davsan.html"
+        } else if (localStorage.garag === "3") {
+            window.location.href = "../html/bugdiigdavsan.html"
+        } else if (localStorage.garaga === "0") {
+            window.location.href = "../html/gol.html"
+        }
+    }
+    const res = () => {
+        window.location.href = '../html/mars.html';
+    }
+
+</script>
+
+
+</html>

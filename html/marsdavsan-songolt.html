@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <link rel="stylesheet" href="../css/marsdavsan-songolt.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="butsah" onclick="buts()"></div>
+  <div id="container">
+    <div id="asuult">Та тоглох төрлөө сонгоно уу</div>
+    <div id="songolt">
+      <div id="jump" onclick="jump()">Саад давах</div>
+      <div id="space-shooter" onclick="spaceshooter()">Сөнөөгч онгоц</div>
+      <div id="quiz" onclick="quiz()">Асуулт хариулт</div>
+    </div>
+  </div>
+</body>
+<script>
+  localStorage.setItem("davsan", "davsaan");
+  const buts = () => {
+    if (localStorage.garag === "3") {
+      window.location.href = "../html/bugdiigdavsan.html";
+    } else if (localStorage.garag === "1") {
+      window.location.href = "../html/golmarsdavsan.html"
+    } else if (localStorage.garag === "2") {
+      window.location.href = "../html/goldmars-jup-davsan.html"
+    }
+  }
+  const jump = () => {
+    window.location.href = "../html/mars.html";
+  };
+  const spaceshooter = () => {
+    window.location.href = "../html/space-shooter.html";
+  };
+  const quiz = () => {
+    window.location.href = "../html/quizmars.html";
+  };
+</script>
+
+</html>

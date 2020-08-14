@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url("../zurag/spaceback.jpg");
+  background-size: cover;
+}
+#mars {
+  margin-top: 5vw;
+  margin-left: 10vw;
+  height: 45vh;
+  width: 20vw;
+  display: flex;
+}
+#jupiter {
+  margin-top: 5vw;
+  margin-left: 10vw;
+  height: 45vh;
+  width: 20vw;
+  display: flex;
+}
+#garag3 {
+  margin-top: 5vw;
+  margin-left: 10vw;
+  height: 45vh;
+  width: 20vw;
+  display: flex;
+}
+#marsa {
+  position: absolute;
+  z-index: 999;
+  width: 28vw;
+  height: 5vh;
+  top: 10vw;
+  left: 15vw;
+  color: aliceblue;
+  font-family: fantasy;
+}
+#jupa {
+  position: absolute;
+  z-index: 999;
+  width: 28vw;
+  height: 5vh;
+  top: 10vw;
+  left: 44vw;
+  color: aliceblue;
+  font-family: fantasy;
+}
+#nepa {
+  position: absolute;
+  z-index: 999;
+  width: 28vw;
+  height: 5vh;
+  top: 10vw;
+  left: 75vw;
+  color: aliceblue;
+  font-family: fantasy;
+}

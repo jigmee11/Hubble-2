@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/uheh3.css" />
+
+</head>
+
+<body onload style="width: 100vw;">
+    <div id="hehe">
+        <div id="game-over">Тоглоом дууслаа</div>
+        <div id="tovch">
+            <div id="butsah" onclick="butsah()"></div>
+            <div id="restart" onclick="res()"></div>
+        </div>
+    </div>
+</body>
+<script>
+    const butsah = () => {
+        if (localStorage.davsan === "davsaanneptune") {
+            window.location.href = "../html/bugdiigdavsan.html";
+        } else {
+            window.location.href = '../html/goldmars-jup-davsan.html';
+        }
+    }
+    const res = () => {
+        window.location.href = '../html/garag3.html';
+    }
+
+</script>
+
+
+</html>

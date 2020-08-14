@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("../zurag/mars.png");
+  background-size: cover; */
+}
+#parent {
+  position: absolute;
+  z-index: 999;
+  width: 21vw;
+  height: 5vh;
+  top: 3vw;
+  left: 75vw;
+  /* border: 1px solid black; */
+  border-radius: 2vw;
+}
+#child {
+  transition: all 1s;
+  z-index: 999;
+  width: 0%;
+  height: 100%;
+  background-color: #e25b5b;
+  border-radius: 2vw;
+  top: 100%;
+  left: 100%;
+}
