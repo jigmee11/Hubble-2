@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
   <link rel="manifest" href="manifest.manifest">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
@@ -18,7 +19,9 @@
 <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
 <script src="../js/firebase.js"></script>
 <script>
+
   localStorage.removeItem('garag');
+  localStorage.removeItem('davsan')
   console.log(localStorage)
   const mover = () => {
     window.location.href = "html/gol.html";

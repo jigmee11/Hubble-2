@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
   <title>Document</title>
@@ -20,7 +21,11 @@
 <script>
 
   const butsah = () => {
-    if (localStorage.davsan === "davsaan") {
+    if (localStorage.garag === "3") {
+      window.location.href = "../html/bugdiigdavsan.html"
+    } else if (localStorage.garag === "2") {
+      window.location.href = "../html/goldmars-jup-davsan.html"
+    } else if (localStorage.garag === "1") {
       window.location.href = "../html/golmarsdavsan.html"
     } else {
       window.location.href = "../html/gol.html"

@@ -67,29 +67,35 @@ const background = setInterval(() => {
     y--;
   }
   if (y <= -cs.height / 6) {
-    window.location.href = "../html/golmarsdavsan.html";
+    if (localStorage.garag === "3") {
+      window.location.href = "../html/bugdiigdavsan.html"
+    } else if (localStorage.garag === "2") {
+      window.location.href = "../html/goldmars-jup-davsan.html"
+    } else {
+      window.location.href = "../html/golmarsdavsan.html";
+    }
   }
 }, 10);
 const buu = setInterval(() => {
-  // ly -= 4;
-  // ly1 -= 4;
-  // ly2 -= 4;
+  ly -= 4;
+  ly1 -= 4;
+  ly2 -= 4;
   daisany += 2;
   chuluuy += 2;
   ley += 5;
 
-  // if (ly < -cs.height / 24) {
-  //   lx = x + cs.width / 26;
-  //   ly = y - cs.height / 24;
-  // }
-  // if (ly1 < -cs.height / 24) {
-  //   lx1 = x + cs.width / 26;
-  //   ly1 = y - cs.height / 24;
-  // }
-  // if (ly2 < -cs.height / 24) {
-  //   lx2 = x + cs.width / 26;
-  //   ly2 = y - cs.height / 24;
-  // }
+  if (ly < -cs.height / 24) {
+    lx = x + cs.width / 26;
+    ly = y - cs.height / 24;
+  }
+  if (ly1 < -cs.height / 24) {
+    lx1 = x + cs.width / 26;
+    ly1 = y - cs.height / 24;
+  }
+  if (ly2 < -cs.height / 24) {
+    lx2 = x + cs.width / 26;
+    ly2 = y - cs.height / 24;
+  }
   if (ley >= cs.height) {
     lex = daisanx + cs.width / 26;
     ley = daisany + cs.height / 24;
@@ -203,23 +209,23 @@ const buu = setInterval(() => {
 
     clearInterval(buu);
   }
-  const sum = setInterval(() => {
-    ly -= 4;
-    ly1 -= 4;
-    ly2 -= 4;
-    if (ly < -cs.height / 24) {
-      lx = x + cs.width / 26;
-      ly = y - cs.height / 24;
-    }
-    if (ly1 < -cs.height / 24) {
-      lx1 = x + cs.width / 26;
-      ly1 = y - cs.height / 24;
-    }
-    if (ly2 < -cs.height / 24) {
-      lx2 = x + cs.width / 26;
-      ly2 = y - cs.height / 24;
-    }
-  }, 500);
+  // const sum = setInterval(() => {
+  //   ly -= 4;
+  //   ly1 -= 4;
+  //   ly2 -= 4;
+  //   if (ly < -cs.height / 24) {
+  //     lx = x + cs.width / 26;
+  //     ly = y - cs.height / 24;
+  //   }
+  //   if (ly1 < -cs.height / 24) {
+  //     lx1 = x + cs.width / 26;
+  //     ly1 = y - cs.height / 24;
+  //   }
+  //   if (ly2 < -cs.height / 24) {
+  //     lx2 = x + cs.width / 26;
+  //     ly2 = y - cs.height / 24;
+  //   }
+  // }, 500);
   if (i <= 0) {
     window.location.href = "../html/mars-shooter.html";
   }

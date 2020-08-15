@@ -14,17 +14,18 @@ body {
 #hehe {
   width: 45vw;
   height: 25vw;
-  border: 2px inset;
+  border: 5px inset;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../zurag//spaceback.jpg");
+  background-image: url("../zurag/spaceback.jpg");
   color: #34495e;
 }
 #game-over {
   margin: 3vw;
   font-size: 4vw;
   font-family: fantasy;
+  color: #ffffff;
 }
 #tovch {
   display: flex;

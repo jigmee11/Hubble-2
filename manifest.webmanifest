@@ -1,0 +1,13 @@
+{
+  "name": "Hubble",
+  "short_name": "Hubble",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "/zurag/ic_launcher.png",
+      "sizes": "192x192"
+    }
+  ]
+}

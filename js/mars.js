@@ -35,7 +35,8 @@ let sx1 = cs.width + 110//saad2 iin ahnii x iin utga
 let si1 = 0
 let t = 1
 let l = cs.height - cs.height / 3.5 - 5 - 30
-
+let map = 0, m = 0;
+let iq = 0;
 const ehleh = () => {
   ctx.clearRect(0, 0, cs.width, cs.heigth)
   ctx.drawImage(background, 0, 0, cs.width, cs.height);
@@ -93,7 +94,10 @@ const start = setInterval(() => {
     px1 -= 5
     if (gx <= -cs.width - 100) {
       gx = cs.width;
+      iq = iq + 25;
       t++;
+
+      map = document.getElementById("child").style.width = iq + "%";
     }
     if (gx1 <= -cs.width - 100) {
       gx1 = cs.width;
@@ -177,11 +181,16 @@ const start = setInterval(() => {
     }
 
     undsen()
+    // map += 0.05;
+
+
     // if (t == 3) {
     //   // px1 = -120;
     //   px = -120;
     // }
     if (t == 4) {
+      iq = iq + 25;
+      map = document.getElementById("child").style.width = iq + "%";
       uy = cs.height - cs.height / 3
       clearInterval(start)
       const niseh = setInterval(() => {
@@ -207,6 +216,7 @@ const start = setInterval(() => {
     }
 
   }
+
 
 }, 10);
 

@@ -17,7 +17,7 @@ canvas {
   height: 5vh;
   top: 3vw;
   left: 75vw;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   border-radius: 2vw;
 }
 #child {

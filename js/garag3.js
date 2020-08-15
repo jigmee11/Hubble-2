@@ -35,7 +35,8 @@ let sx1 = cs.width + 110//saad2 iin ahnii x iin utga
 let si1 = 0
 let t = 1
 let l = cs.height - cs.height / 3.5 - 5 - 30
-
+let iq = 0
+let map
 const ehleh = () => {
   ctx.clearRect(0, 0, cs.width, cs.heigth)
   ctx.drawImage(background, 0, 0, cs.width, cs.height);
@@ -94,6 +95,8 @@ const start = setInterval(() => {
     if (gx <= -cs.width - 100) {
       gx = cs.width;
       t++;
+      iq = iq + 18;
+      map = document.getElementById("child").style.width = iq + "%";
     }
     if (gx1 <= -cs.width - 100) {
       gx1 = cs.width;
@@ -135,12 +138,12 @@ const start = setInterval(() => {
     if (sx <= -60) {
       sx = cs.width
     }
-    if (sx1 <= -50 && si1 < 2) {
+    if (sx1 <= -50 && si1 < 6) {
       sx1 = cs.width + 200
       si1++;
     }
     if (px1 <= -100) {
-      px1 = cs.width + 600
+      px1 = cs.width + 800
 
     }
 
@@ -177,11 +180,14 @@ const start = setInterval(() => {
     }
 
     undsen()
-    if (t == 3) {
-      px1 = -120;
-      px = -120;
-    }
-    if (t == 4) {
+    // if (t == 3) {
+    //   px1 = -120;
+    //   px = -120;
+    // }
+    if (t == 6) {
+      iq = iq + 10
+
+      map = document.getElementById("child").style.width = iq + "%";
       uy = cs.height - cs.height / 3
       clearInterval(start)
 
@@ -204,7 +210,7 @@ const start = setInterval(() => {
             }
           }, 30);
         }
-      }, 30);
+      }, 10);
     }
 
   }

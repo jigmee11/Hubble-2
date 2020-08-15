@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
   <title>Document</title>
   <link rel="stylesheet" href="../css/jupiter.css" />
@@ -13,6 +14,9 @@
 
 <body onload style="width: 100vw;">
   <canvas onclick="jump()" height="500" width="1000" style="border: 1px solid black;" id="canvas"></canvas>
+  <div id="parent">
+    <div id="child"></div>
+  </div>
 </body>
 <script src="../js/jupiter.js"></script>
 
