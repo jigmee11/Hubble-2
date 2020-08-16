@@ -2,30 +2,36 @@
 <html lang="en">
 
 <head>
-    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="../css/quizmars.css">
 </head>
-<div class="container">
-    <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
 
+<body>
+    <div class="container">
+        <div id="zurag">
+            <img src="" alt="" id="image">
         </div>
-    </div>
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn">Эхлэх</button>
-        <button id="next-btn" class="next-btn btn hide">Дараагийнх</button>
-    </div>
-</div>
+        <div class="dar" id="dar">
+            <div class="question" id="qu">
+                <div id="pa"></div>
+                <div id="q-container">
+                    <button id="first" class="hariult"></button>
+                    <button id="second" class="hariult"></button>
+                    <button id="third" class="hariult"></button>
+                    <button id="fourth" class="hariult"></button>
+                </div>
+            </div>
+            <div class="control">
+                <button onclick="start()" id="start">Start</button>
+                <button id="next" onclick="nextl()">Next</button>
+                <button id="returne" onclick="returner()">Butsah</button>
+            </div>
+        </div>
 
-
-<script src="../css/quizmars.js"></script>
+    </div>
+</body>
+<script src="../js/quizmars.js"></script>
 
 </html>

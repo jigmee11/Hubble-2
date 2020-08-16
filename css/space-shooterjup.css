@@ -1,0 +1,74 @@
+#canvas {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-image: cover;
+  overflow: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+}
+#parent {
+  position: absolute;
+  z-index: 999;
+  width: 28vw;
+  height: 5vh;
+  top: 0.5vw;
+  left: 71vw;
+  border: 3px solid yellow;
+  border-radius: 2vw;
+}
+#child {
+  transition: all 1s;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  border-radius: 2vw;
+}
+
+#huu {
+  position: absolute;
+  z-index: 999;
+  width: 5vw;
+  height: 10vh;
+  top: 5vw;
+  left: 71vw;
+
+  background-image: url("../zurag/enemy2.png");
+  background-size: cover;
+}
+#puujintoo {
+  position: absolute;
+  z-index: 999;
+  width: 5vw;
+  height: 10vh;
+  top: 5vw;
+  left: 77vw;
+  font-size: large;
+  color: white;
+}
+#chuluutoo {
+  position: absolute;
+  z-index: 999;
+  width: 5vw;
+  height: 10vh;
+  top: 11vw;
+  left: 77vw;
+  font-size: large;
+  color: white;
+}
+#chuluu {
+  position: absolute;
+  z-index: 999;
+  width: 5vw;
+  height: 10vh;
+  top: 10vw;
+  left: 71vw;
+  background-image: url("../zurag/saad2.png");
+  background-size: cover;
+}

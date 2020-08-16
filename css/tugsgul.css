@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../zurag/gg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#hehe {
+  width: 45vw;
+  height: 25vw;
+  border: 5px inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../zurag/gg.jpg");
+  color: #34495e;
+}
+#game-over {
+  margin: 3vw;
+  font-size: 4vw;
+  font-family: fantasy;
+  color: #ffffff;
+}
+#butsah {
+  position: absolute;
+  z-index: 999;
+  width: 9vw;
+  height: 18vh;
+  top: 1vw;
+  left: 1vw;
+  background-image: url("../zurag/Group 89.png");
+  background-size: cover;
+}
+#he {
+  font-size: large;
+  color: white;
+}

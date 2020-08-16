@@ -27,6 +27,7 @@ let daisany = -cs.height / 6;
 let lex, ley, jijigx, jijigy;
 let chuluux = Math.floor(Math.random() * (cs.width - 200));
 let chuluuy = -cs.height / 4;
+let chul = 0, cc;
 if (chuluux + cs.width / 12 >= daisanx && chuluux <= daisanx + cs.width / 12) {
     daisanx = Math.floor(Math.random() * cs.width - 10);
     chuluux = Math.floor(Math.random() * cs.width - 10);
@@ -121,7 +122,11 @@ const buu = setInterval(() => {
         lx = x + cs.width / 26;
         ly = y - cs.height / 24;
         ylalt++;
-        qq = document.getElementById("puujintoo").innerHTML = "x" + (4 - ylalt);
+        if (ylalt <= 6) {
+            qq = document.getElementById("puujintoo").innerHTML = "x" + (6 - ylalt);
+        } else {
+            qq = document.getElementById("puujintoo").innerHTML = "x" + 0;
+        }
     }
     if (
         daisanx <= lx1 &&
@@ -133,7 +138,11 @@ const buu = setInterval(() => {
         lx1 = x + cs.width / 26;
         ly1 = y - cs.height / 24;
         ylalt++;
-        qq = document.getElementById("puujintoo").innerHTML = "x" + (4 - ylalt);
+        if (ylalt <= 6) {
+            qq = document.getElementById("puujintoo").innerHTML = "x" + (6 - ylalt);
+        } else {
+            qq = document.getElementById("puujintoo").innerHTML = "x" + 0;
+        }
     }
     if (
         daisanx <= lx2 &&
@@ -145,7 +154,11 @@ const buu = setInterval(() => {
         lx2 = x + cs.width / 26;
         ly2 = y - cs.height / 24;
         ylalt++;
-        qq = document.getElementById("puujintoo").innerHTML = "x" + (4 - ylalt);
+        if (ylalt <= 6) {
+            qq = document.getElementById("puujintoo").innerHTML = "x" + (6 - ylalt);
+        } else {
+            qq = document.getElementById("puujintoo").innerHTML = "x" + 0;
+        }
     }
     //
     // chuluunii heseg
@@ -163,6 +176,12 @@ const buu = setInterval(() => {
         // jijigy++;
         lx = x + cs.width / 26;
         ly = y - cs.height / 24;
+        chul++;
+        if (chul <= 6) {
+            cc = document.getElementById("chuluutoo").innerHTML = "x" + (6 - chul);
+        } else {
+            cc = document.getElementById("chuluutoo").innerHTML = "x" + 0;
+        }
     }
     if (
         chuluux <= lx1 &&
@@ -173,6 +192,12 @@ const buu = setInterval(() => {
         chuluuy = -cs.height / 6;
         lx1 = x + cs.width / 26;
         ly1 = y - cs.height / 24;
+        chul++;
+        if (chul <= 6) {
+            cc = document.getElementById("chuluutoo").innerHTML = "x" + (6 - chul);
+        } else {
+            cc = document.getElementById("chuluutoo").innerHTML = "x" + 0;
+        }
     }
     if (
         chuluux <= lx2 &&
@@ -183,6 +208,12 @@ const buu = setInterval(() => {
         chuluuy = -cs.height / 6;
         lx2 = x + cs.width / 26;
         ly2 = y - cs.height / 24;
+        chul++;
+        if (chul <= 6) {
+            cc = document.getElementById("chuluutoo").innerHTML = "x" + (6 - chul);
+        } else {
+            cc = document.getElementById("chuluutoo").innerHTML = "x" + 0;
+        }
     }
     if (lex >= x && lex <= x + cs.width / 12 && ley + cs.height / 21 >= y) {
         lex = daisanx + cs.width / 26;
@@ -191,7 +222,7 @@ const buu = setInterval(() => {
         console.log(i);
         l = document.getElementById("child").style.width = i + "%";
     }
-    if (ylalt == 4) {
+    if (ylalt >= 6 && chul >= 6) {
         chuluux = Math.floor(Math.random() * cs.width - 10);
         chuluuy = -cs.height / 6;
         daisanx = Math.floor(Math.random() * cs.width - 10);
@@ -207,27 +238,11 @@ const buu = setInterval(() => {
 
         clearInterval(buu);
     }
-    // const sum = setInterval(() => {
-    //     ly -= 4;
-    //     ly1 -= 4;
-    //     ly2 -= 4;
-    //     if (ly < -cs.height / 24) {
-    //         lx = x + cs.width / 26;
-    //         ly = y - cs.height / 24;
-    //     }
-    //     if (ly1 < -cs.height / 24) {
-    //         lx1 = x + cs.width / 26;
-    //         ly1 = y - cs.height / 24;
-    //     }
-    //     if (ly2 < -cs.height / 24) {
-    //         lx2 = x + cs.width / 26;
-    //         ly2 = y - cs.height / 24;
-    //     }
-    // }, 500);
+
     if (i <= 0) {
-        window.location.href = "../html/mars-shooter.html";
+        window.location.href = "../html/jup-space-uheh.html";
     }
-}, 30);
+}, 20);
 
 document.addEventListener(
     "touchmove",
