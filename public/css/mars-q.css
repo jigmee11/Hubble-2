@@ -1,0 +1,110 @@
+.question{
+    opacity: 0;
+    display: none;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("../zurag/spaceback.jpg");
+    background-size: cover;
+}
+#pa{
+    color: white;
+    display: block;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;}
+#qu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start{
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #19A8F1;
+    border-radius: 5px;
+    width: 15vw;
+    height: 13vh;
+    margin: 10px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#q-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+}
+.hariult{
+    width: 30vw;
+    height: 13vh;
+    background-color: #19A8F1;
+    margin: 1vw;
+    border-radius: 5px;
+    color: white;
+    font-size: 2vw;
+}
+#next{
+    color: white;
+    font-size: 2w;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #19A8F1;
+    border-radius: 5px;
+    display: none;
+    width: 15vw;
+    height: 13vh;
+    margin: 10px;
+}
+#returne{
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #19A8F1;
+    border-radius: 5px;
+    display: none;
+    width: 17vw;
+    height: 13vh;
+    margin: 10px;
+}
+#pa{
+    margin-bottom:20px;
+}
+#zurag{
+    width: 40vh;
+}
+#image{
+    width: 100%;
+}
+.dar{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+#zurag{
+    display: none;
+}
