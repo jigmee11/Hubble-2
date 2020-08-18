@@ -34,13 +34,19 @@ const start = () => {
     q.style.width = '70vw';
 } 
 const ih = () =>{
-    if(m<=3){
-        reset(m);
-        m++;
-    }
-    else{
-      window.location.href = '../html/gol.html';
-    }
+  if(m<=3){
+    reset(m);
+    m++;
+}
+else{ 
+  if(localStorage.garag==="3"){
+    window.location.href="../html/bugdiigdavsan.html"
+  }else if(localStorage.garag==="2"){
+    window.location.href="../html/goldmars-jup-davsan.html"
+  }else{
+    window.location.href="../html/golmarsdavsan.html"
+  }
+}
 }
 const reset = (m) => {
     for(let i=0; i<4; i++){
@@ -66,7 +72,13 @@ const nextl = () => {
 }
 
 const returner = () => {
-  window.location.href = '../html/gol.html';
+  if(localStorage.garag==="3"){
+    window.location.href = '../html/bugdiigdavsan.html';
+}else if(localStorage.garag==="2"){
+  window.location.href="../html/goldmars-jup-davsan.html"
+}else{
+  window.location.href="../html/golmarsdavsan.html"
+}
 }
 
 const checker = (e) => {
